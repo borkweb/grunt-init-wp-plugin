@@ -1,2 +1,2 @@
-# header-envy
-A FunnelEnvy plugin
+# {%= title %}
+{%= description %}
