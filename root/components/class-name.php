@@ -1,23 +1,19 @@
 <?php
 
-class {%= class_name %}
-{
+class {%= class_name %} {
 	private $admin;
 
 	/**
 	 * constructor
 	 */
-	public function __construct()
-	{
+	public function __construct() {
 	}//end __construct
 
 	/**
 	 * admin object accessor method
 	 */
-	public function admin()
-	{
-		if ( ! $this->admin )
-		{
+	public function admin() {
+		if ( ! $this->admin ) {
 			require_once __DIR__ . '/class-{%= name %}-admin.php';
 
 			$this->admin = new {%= class_name %}_Admin();
@@ -30,12 +26,10 @@ class {%= class_name %}
 /**
  * singleton function
  */
-function {%= singleton %}()
-{
+function {%= singleton %}() {
 	global ${%= singleton %};
 
-	if ( ! ${%= singleton %} )
-	{
+	if ( ! ${%= singleton %} ) {
 		${%= singleton %} = new {%= class_name %};
 	}//end if
 
