@@ -1,4 +1,4 @@
-# grunt-wp-plugin-scaffolding
+# grunt-init-wp-plugin
 WordPress plugin scaffolding for grunt-init
 
 ## Installation
