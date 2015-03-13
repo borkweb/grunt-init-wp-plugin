@@ -53,11 +53,7 @@ exports.template = function( grunt, init, done ) {
 		// files to copy (and process)
 		var files = init.filesToCopy( props );
 
-		// add property named license files
-		init.addLicenseFiles( files, props.license );
-
-		// actually copy (and process) files
-		init.copyAndProcess( files, props, { noProcess: 'libs/**' } );
+		console.log( props.css_type.toLowerCase()[0] );
 
 		switch( props.css_type.toLowerCase()[0] ) {
 			case 'l':
@@ -77,6 +73,9 @@ exports.template = function( grunt, init, done ) {
 				props.css_type = 'sass';
 				break;
 		}//end switch
+
+		// actually copy (and process) files
+		init.copyAndProcess( files, props );
 
 		// Generate package.json file, used by npm and grunt.
 		init.writePackageJSON( 'package.json', {

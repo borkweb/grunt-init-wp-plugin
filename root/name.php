@@ -13,4 +13,4 @@ License: {%= license %}
 
 require_once __DIR__ . '/components/class-{%= name %}.php';
 
-{%= name %}();
+{%= singleton %}();
