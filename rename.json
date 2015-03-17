@@ -6,5 +6,6 @@
 	"components/js/min/name.js": "components/js/min/{%= name %}.js",
 	"components/sass/name.scss": "components/sass/{%= name %}.scss",
 	"components/less/name.less": "components/less/{%= name %}.less",
-	"components/css/name.css": "components/css/{%= name %}.css"
+	"components/css/name.css": "components/css/{%= name %}.css",
+	"components/css/name.css": "components/css/min/{%= name %}.min.css"
 }

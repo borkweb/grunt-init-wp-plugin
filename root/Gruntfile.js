@@ -12,7 +12,7 @@ module.exports = function( grunt ) {
 					expand: true,
 					cwd: 'components/sass',
 					src: ['*.scss'],
-					dest: '../css',
+					dest: './components/css',
 					ext: '.css'
 				}]
 			}
@@ -50,7 +50,7 @@ module.exports = function( grunt ) {
 				dest: 'components/css/min',
 				ext: '.min.css'
 			}
-		}
+		},
 		watch: {
 			{% if ( 'sass' === css_type ) { %}
 			sass: {
